@@ -1,0 +1,27 @@
+{
+    "name": "oliverweinhold/automadcomments",
+    "description": "Add simple database-free comments to your Automad website.",
+    "type": "automad-package",
+    "keywords": ["extension", "comments", "Work in Progress"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Oliver Weinhold",
+            "homepage": "https://oliverweinhold.de"
+        }
+    ],
+    "homepage": "https://oliverweinhold.de",
+    "require": {
+        "automad/package-installer": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "OliverWeinhold\\": ""
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "automad/package-installer": true
+        }
+    }
+}

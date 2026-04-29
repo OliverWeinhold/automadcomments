@@ -1,0 +1,114 @@
+/* Minimal CSS for Automad Comments (use ow-comments class) */
+
+.ow-comments {
+  margin-top: 2rem;
+}
+
+/* Hide honeypot field */
+.ow-comments-hp {
+  display: none !important;
+}
+
+.ow-comments-success,
+.ow-comments-error {
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.ow-comments-error {
+  color: #cc0000;
+  background: #fff5f5;
+  border-left: 4px solid #cc0000;
+}
+
+.ow-comments-success {
+  color: #008000;
+  background: #f5fff5;
+  border-left: 4px solid #008000;
+}
+
+.ow-comments-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 1.5rem;
+}
+
+.ow-field {
+  margin-bottom: 1.25rem;
+  width: 100%;
+}
+
+.ow-comments-input,
+.ow-comments-textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width: 1024px) {
+  .ow-field-half {
+    width: calc(50% - 0.75rem);
+  }
+}
+
+.ow-comments-list-wrapper {
+  margin-top: 2.5rem;
+  position: relative;
+  scrollbar-width: none; /* Hide scrollbar Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar IE/Edge */
+  overflow-y: auto;
+}
+
+.ow-comments-list-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+
+.ow-comments-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.ow-comments-name {
+  font-weight: bold;
+}
+
+.ow-comments-date {
+  font-size: 0.85em;
+  opacity: 0.7;
+}
+
+.ow-comments-body {
+  white-space: pre-wrap;
+}
+
+.ow-comments-empty {
+  text-align: center;
+  padding: 2rem 0;
+  opacity: 0.6;
+}
+
+.ow-comments-scroll-info {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.2s;
+  user-select: none;
+}
+
+.ow-comments-scroll-info:hover {
+  opacity: 1;
+  transform: translateY(2px);
+}
+
+@media (max-width: 1023px) {
+  .ow-comments-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
